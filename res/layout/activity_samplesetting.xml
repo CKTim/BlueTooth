@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/lightBlue" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <Button
+                android:id="@+id/btn_dection_left"
+                android:layout_width="12dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/detection_left_return"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/btn_dection_left"
+                android:text="样品名称"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_head_actionbar" >
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/superlightGray"
+                android:focusable="true"
+                android:focusableInTouchMode="true" >
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="255dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/search_box"
+                    android:hint="输入样品关键词...."
+                    android:paddingLeft="35dp"
+                    android:textColorHint="@color/lightGray"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:layout_width="55dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/et_search"
+                    android:background="@drawable/search_btton"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_searchResult"
+                android:layout_width="match_parent"
+                android:layout_height="108dp"
+                android:layout_below="@+id/rl_search" >
+
+                <TextView
+                    android:id="@+id/tv_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="搜索显示"
+                    android:textSize="18dp" />
+
+                <Button
+                    android:id="@+id/btn_result"
+                    android:layout_width="70dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@+id/tv_result"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/sample_backgroud"
+                    android:text="暂无样品"
+                    android:textColor="@color/gray"
+                    android:textSize="14dp" />
+
+                <Button
+                    android:id="@+id/btn_edit"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/tv_result"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/edit_sample"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view0"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/rl_searchResult"
+                android:layout_marginTop="15dp"
+                android:background="@color/lightGray" />
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/view0"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/black"
+                android:text="Tip: 点击相应样品可进行修改" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_below="@+id/tv_tip"
+                android:layout_marginTop="12dp"
+                android:background="@color/lightGray" />
+
+            <RelativeLayout
+                android:id="@+id/rl_allSample"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view" >
+
+                <TextView
+                    android:id="@+id/tv_allSample"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:text="全部样品"
+                    android:textSize="18dp" />
+
+                <com.bluetoothle.view.CustomGridview
+                    android:id="@+id/gv_allSample"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/tv_allSample"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:horizontalSpacing="15dp"
+                    android:numColumns="5"
+                    android:verticalSpacing="15dp" >
+                </com.bluetoothle.view.CustomGridview>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

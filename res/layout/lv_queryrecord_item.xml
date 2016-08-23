@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/ln_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv_Number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="0023" 
+                android:textSize="13dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="小白菜"
+                 android:textSize="13dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5" >
+
+            <TextView
+                android:id="@+id/tv_DetectionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="2016/7/20" 
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="12dp"
+                 android:textSize="13dp"/>
+
+            <TextView
+                android:id="@+id/tv_DetectionTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+               android:layout_toRightOf="@+id/tv_DetectionDate"
+               android:layout_marginLeft="9dp"
+                android:singleLine="true"
+                 android:textSize="13dp"
+                 android:text="15:20:30"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv_InhibitionRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                 android:textSize="13dp"
+                android:text="10%" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3" >
+
+            <TextView
+                android:id="@+id/tv_Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="阴性"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                 android:textSize="13dp" />
+            <CheckBox 
+                android:id="@+id/cb_selectRecord"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/tv_Result"
+                android:button="@null"
+                android:background="@drawable/selector_cb_select_record"
+                android:checked="false"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rl_popup_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_SampleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="小白菜"
+                android:textColor="@color/black"
+                android:textSize="22dp" />
+
+            <View
+                android:id="@+id/view0"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="30dp"
+                android:background="@color/lightGray" />
+
+            <Button
+                android:id="@+id/btn_modify"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/selector_btn_click"
+                android:text="修改" />
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightGray" />
+
+            <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/selector_btn_click"
+                android:text="删除" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/lightGray" />
+
+            <Button
+                android:id="@+id/btn_addmore"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="@drawable/selector_btn_click"
+                android:text="添加新样品" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

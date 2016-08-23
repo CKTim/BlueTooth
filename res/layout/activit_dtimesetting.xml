@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/iv_clock"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/bg_detection_time" />
+
+    <TextView
+        android:id="@+id/tv_displayTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_clock"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="当前检测时间为150s"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_detectionTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_displayTime"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="19dp"
+        android:hint="单位为秒，输入数值即可"
+        android:textColorHint="@color/lightGray"
+        android:textSize="15dp"
+        android:maxLength="3"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_detectionTime"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/selector_btn_click2"
+        android:text="确定修改"
+        android:textColor="@color/white" 
+        android:layout_marginBottom="27dp"/>
+
+</RelativeLayout>

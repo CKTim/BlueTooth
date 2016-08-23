@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/tv_AddOldSampleName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="样品将被添加"
+        android:textColor="@color/black"
+        android:textSize="19dp" />
+
+    <EditText
+        android:id="@+id/et_addSample"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_AddOldSampleName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_horizontal"
+        android:hint="请输入要添加的样品"
+        android:maxLength="3"
+        android:textColorHint="@color/lightGray"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btn_sureAdd"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_addSample"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/selector_btn_click2"
+        android:text="确定添加"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

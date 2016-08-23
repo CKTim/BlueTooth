@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tv_ChangeEthernet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="27dp"
+        android:text="以太网设置"
+        android:textColor="@color/black"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/tv_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ChangeEthernet"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:text="IP"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ln_ip"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_ip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_ip1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_ip2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_ip3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_ip4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_ip5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_ip6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_ip7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_netmask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_ip"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:text="子网掩码"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ln_netmask"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_netmask"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_netmask1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_netmask2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_netmask3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_netmask4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_netmask5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_netmask6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_netmask7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_gateway"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_netmask"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="14dp"
+        android:text="网关"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/ln_gateway"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/tv_gateway"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_gateway1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_gateway2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_gateway3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_gateway4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_gateway5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+
+        <TextView
+            android:id="@+id/tv_gateway6"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="—" />
+
+        <EditText
+            android:id="@+id/et_gateway7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textSize="13dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_ifauto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ln_gateway"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="19dp" >
+
+        <CheckBox
+            android:id="@+id/cb_ifAuto"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/selector_cb_select_record"
+            android:button="@null" />
+
+        <TextView
+            android:id="@+id/tv_ifauto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/cb_ifAuto"
+            android:text="是否自动分配IP"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_sure"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl_ifauto"
+        android:layout_marginBottom="27dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/selector_btn_click2"
+        android:text="确定"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
